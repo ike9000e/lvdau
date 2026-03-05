@@ -1,6 +1,6 @@
-= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 	LVDAU: Low Volume Detection - Audio Utility
-= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = 
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 	
 	Detects and removes silence from audio streams or files.
 	Command line utility for Windows and Linux platforms.
@@ -28,18 +28,15 @@
 
 		$> gcc ./amalg2.cpp -lc -lstdc++ -lm -static -O2 -o lvdau.out
 
-	Build command-line arguments for Visual C++ on Windows
+	Build command-line arguments for MS Visual C++ (MSVC) on Windows
 	
 		Compilation:
 			
 			/EHsc
 			/FS
 			/std:c++14
-			"/D"_USING_V110_SDK71_
 			"/D"WIN32
-			"/D"_WIN32
 			"/D"WIN64
-			"/D"_WIN64
 			"/D"MBCS
 			/O2
 			/W4
